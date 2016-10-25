@@ -1,14 +1,13 @@
-$:.push File.expand_path("../lib", __FILE__)
+# frozen_string_literal: true
+$:.push File.expand_path('../lib', __FILE__)
 
-require "settings/version"
+require 'cached_settings/version'
 
 Gem::Specification.new do |s|
-  s.name        = "settings"
-  s.version     = Settings::VERSION
-  s.authors     = ["pavel-zhuravlyov"]
-  s.summary     = "Summary of Settings."
-
-  # s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.name        = 'cached_settings'
+  s.version     = CachedSettings::VERSION
+  s.authors     = ['pavel-zhuravlyov']
+  s.summary     = 'CachedSettings'
 
   s.add_dependency 'rails'
   s.add_dependency 'redis'
@@ -21,4 +20,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'mock_redis'
   s.add_development_dependency 'standalone_migrations'
+  s.add_development_dependency 'factory_girl'
 end

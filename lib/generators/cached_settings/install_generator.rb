@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
+require 'rails/generators'
 require 'rails/generators/base'
 require 'rails/generators/migration'
 
-module Settings
+module CachedSettings
   class InstallGenerator < ::Rails::Generators::Base
     include Rails::Generators::Migration
 
@@ -14,8 +15,8 @@ module Settings
     end
 
     def copy_templates
-      migration_template 'create_settings.rb', 'db/migrate/create_settings.rb'
-      template 'setting.rb', 'app/models/setting.rb'
+      migration_template 'create_cached_settings.rb', 'db/migrate/create_cached_settings.rb'
+      template 'cached_setting.rb', 'app/models/cached_setting.rb'
     end
   end
 end

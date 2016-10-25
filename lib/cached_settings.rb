@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require 'settings/version'
-require 'settings/config'
-require 'settings/storage'
+require 'cached_settings/version'
+require 'cached_settings/config'
+require 'cached_settings/storage'
 
-module Settings
+module CachedSettings
   def self.get(key, default: nil)
     Storage.get(key, default)
   end

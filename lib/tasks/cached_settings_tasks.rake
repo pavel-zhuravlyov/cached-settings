@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :settings do
+# task :cached_settings do
 #   # Task goes here
 # end

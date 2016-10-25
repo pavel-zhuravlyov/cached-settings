@@ -11,7 +11,7 @@
 # Configuration parameters: AllowUnusedKeywordArguments, IgnoreEmptyMethods.
 Lint/UnusedMethodArgument:
   Exclude:
-    - 'lib/generators/settings/install_generator.rb'
+    - 'lib/generators/cached_settings/install_generator.rb'
 
 # Offense count: 6
 # Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives.
@@ -31,11 +31,11 @@ Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
-    - 'lib/generators/settings/install_generator.rb'
-    - 'lib/generators/settings/templates/create_settings.rb'
-    - 'lib/generators/settings/templates/setting.rb'
+    - 'lib/generators/cached_settings/install_generator.rb'
+    - 'lib/generators/cached_settings/templates/create_cached_settings.rb'
+    - 'lib/generators/cached_settings/templates/cached_setting.rb'
     - 'lib/storage.rb'
-    - 'lib/settings/storage.rb'
+    - 'lib/cached_settings/storage.rb'
 
 # Offense count: 5
 # Cop supports --auto-correct.
@@ -46,8 +46,8 @@ Style/FrozenStringLiteralComment:
     - 'Gemfile'
     - 'Rakefile'
     - 'lib/storage.rb'
-    - 'lib/tasks/settings_tasks.rake'
-    - 'settings.gemspec'
+    - 'lib/tasks/cached_settings_tasks.rake'
+    - 'cached_settings.gemspec'
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -63,4 +63,4 @@ Style/SpecialGlobalVars:
 Style/StringLiterals:
   Exclude:
     - 'Rakefile'
-    - 'settings.gemspec'
+    - 'cached_settings.gemspec'
