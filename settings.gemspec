@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.authors     = ['pavel-zhuravlyov']
   s.summary     = 'CachedSettings'
 
-  s.add_dependency 'rails'
+  s.add_dependency 'rails', '>= 4.0'
   s.add_dependency 'redis'
   s.add_dependency 'redis-rails'
 

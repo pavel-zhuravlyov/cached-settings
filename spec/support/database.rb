@@ -12,7 +12,6 @@ RSpec.configure do |config|
   end
 
   config.after do
-    CreateCachedSettings.migrate :down
     FileUtils.rm_f(DATABASE_PATH)
   end
 end

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateCachedSettings < ActiveRecord::Migration[5.0]
+class CreateCachedSettings < ActiveRecord::Migration
   def change
     create_table :cached_settings do |t|
       t.string :key, default: nil, null: false
