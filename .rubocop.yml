@@ -32,8 +32,8 @@ Style/Documentation:
     - 'spec/**/*'
     - 'test/**/*'
     - 'lib/generators/cached_settings/install_generator.rb'
-    - 'lib/generators/cached_settings/templates/create_cached_settings.rb'
-    - 'lib/generators/cached_settings/templates/cached_setting.rb'
+    - 'lib/generators/cached_settings/templates_old/create_cached_settings.rb'
+    - 'lib/generators/cached_settings/templates_old/cached_setting.rb'
     - 'lib/storage.rb'
     - 'lib/cached_settings/storage.rb'
 

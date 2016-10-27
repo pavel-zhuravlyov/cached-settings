@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require 'spec_helper'
-require 'generators/cached_settings/templates/cached_setting'
+require 'generators/cached_settings/templates_old/cached_setting'
 
 describe CachedSettings do
   before do
